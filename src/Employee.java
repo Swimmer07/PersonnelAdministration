@@ -1,18 +1,30 @@
 public class Employee {
     private String name;
-    private String vorname;
-    private String geburtsdatum;
-    private char geschlecht;
-    private int alter;
-    private double gewicht;
-    private String abteilung;
-    private double gehalt;
-    private int dienstjahre;
-    private String besonderheiten;
+    private String forename;
+    private String birthday;
+    private char gender;
+    private int age;
+    private double weigh;
+    private String department;
+    private double salary;
+    private int yearsOfService;
+    private String specialitys;
 
-    public Employee(int dienstjahre, double gehalt, String abteilung) {
-        this.dienstjahre = dienstjahre;
-        this.gehalt = gehalt;
-        this.abteilung = abteilung;
+    public Employee(int yearsOfService, double salary, String department) {
+        this.yearsOfService = yearsOfService;
+        this.salary = salary;
+        this.department = department;
+    }
+
+    public int getYearsOfService(){
+        return yearsOfService;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public String getDepartment() {
+        return department;
     }
 }
