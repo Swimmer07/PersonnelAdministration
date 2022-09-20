@@ -1,10 +1,8 @@
 public class MainProgramm {
     public static void main(String[] args) {
-        Employee p1 = new Employee(0,1500,"A38");
-        System.out.println("Dienstjahre: " + p1.getYearsOfService() + " Gehalt: " + p1.getSalary() + " Abteilung: " + p1.getDepartment());
-        Employee p2 = new Employee(3, 1800,"A1");
-        System.out.println("Dienstjahre: " + p2.getYearsOfService() + " Gehalt: " + p2.getSalary() + " Abteilung: " + p2.getDepartment());
-        Employee p3 = new Employee(40, 5000, "F36");
-        System.out.println("Dienstjahre: " + p3.getYearsOfService() + " Gehalt: " + p3.getSalary() + " Abteilung: " + p3.getDepartment());
+        Employee e1 = new Employee("Muller", "Tom", "31.12 .2000", 'M', 21, 130, 0, 5000, "A34", "no founded");
+        Employee e2 = new Employee("Schmidt", "Mark", "30.12.2000", 'd', 20, 70, 2, 1500, "C5", "tall");
+        System.out.println(e1);
+        System.out.println(e2);
     }
 }
